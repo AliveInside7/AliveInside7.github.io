@@ -35,3 +35,31 @@ $(document).ready(function () {
       autoPlay: false,
     });
   });
+
+
+//   preloader
+
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+
+//   btn
+
+let color = '#7872B9'; 
+function change(identifier) {
+ identifier.style.background = color;
+}
+
+let text = '#fff'; 
+function changeText(identifier2) {
+ identifier2.style.color = text;
+}
+
+// let dec = 'none'; 
+// function changeText(identifier) {
+//  identifier.style.text-decoration = dec;
+// }
