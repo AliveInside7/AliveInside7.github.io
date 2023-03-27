@@ -507,7 +507,7 @@ header {
 
 #comments-slider2 {
     margin: 20px auto;
-
+    padding-left: 50px;
     padding: 1em;
     font-family: sans-serif;
     font-weight: normal;
@@ -865,38 +865,117 @@ header {
     width: 1000px;
 }
 
+.fourStepsMobile .calenButtonMobile {
+    margin-top: 50px;
+}
+
+.fourStepsMobile .calenButtonMobile img {
+    padding-bottom: 14px;
+}
+
+.fourStepsMobile .calenButtonMobile img {
+    padding-bottom: 40px;
+}
+
+.fourStepsMobile .calenButtonMobile .primary {
+    padding-bottom: 40px;
+}
+
+.fourStepsMobile .ContImage{
+    margin-top: 50px;
+}
+
+/* .accordion {
+    background-color: #EBF5FF;
+    color: #444;
+    cursor: pointer;
+    padding: 30px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 25px 25px 0px 0px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #4D4D52;
+
+    align-items: start;
+    padding-left: calc(6.4vw - 3.2px);
+}
+
+.active,
+.accordion:hover {
+    background-color: #EBF5FF;
+} 
+
+.accordion:after {
+    content: url(../image/plus.png);
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: url(../image/minus.png);
+}
+
+.panel {
+    /* padding: 0 calc(6.4vw - 3.2px); */
+    /* background-color: #EBF5FF;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 0px 0px 25px 25px;
+
+} */
+
+/* .accordeonAsk h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #7872B9;
+    margin-bottom: calc(1.6vw + 34px);
+    margin-top: calc(5.6vw + 30px);
+}
 
 
+.accordeonAsk.button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #4D4D52;
+    margin: 0;
+    align-items: start;
+    width: 780px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.accordeonAsk p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.01em;   
+    color: #4D4D52;
+    padding: 0 calc(6.4vw - 3.2px);
+    padding-bottom: 30px;
+} */ 
 
 
 
@@ -1079,6 +1158,11 @@ header {
     /* .calenButton .leftContText{
         margin-left: 100px;
     } */
+
+    .fourStepsMobile .calenButtonMobile .primary {
+        font-size: 16px;
+        align-items: center;
+    }
 
 }
 
