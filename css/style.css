@@ -146,6 +146,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    z-index: -1;
 }
 
 .cards {
@@ -156,6 +157,7 @@ header {
 }
 
 .student-box {
+    z-index: 1;
     padding-top: calc(4vw + 60px);
     position: relative;
     width: calc(6.6vw + 277px);
@@ -524,16 +526,18 @@ header {
 
 
 .containerWork .owl-carousel .owl-wrapper-outer {
-    /* overflow: hidden; */
+    overflow: hidden;
     height: 153px;
     background: #F9FCFF;
     border-radius: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 .containerWork .owl-carousel .owl-wrapper-outer .well {
     background: #F9FCFF;
     border-radius: 15px;
-    height: 153px ; 
+    height: 200px;
     border: 0;
     border-top: 1px solid #F9FCFF;
     box-shadow: none;
@@ -545,7 +549,7 @@ header {
     align-items: center;
 }
 
-.containerWork .well h4{
+.containerWork .well h4 {
     width: 100%;
     font-family: 'Montserrat';
     font-style: normal;
@@ -554,38 +558,311 @@ header {
     line-height: 140%;
     text-align: center;
     letter-spacing: 0.01em;
+    color: #4D4D52;
 }
 
-.containerWork .well p{
+.containerWork .well p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    /* or 20px */
     width: 100%;
     text-align: center;
     letter-spacing: 0.01em;
-    margin-bottom: -px;
+    color: #4D4D52;
 }
 
+.owl-carousel .owl-theme {
+    margin: 0;
+    padding: 0px;
+}
 
-.containerWork{
+.owl-carousel .owl-item {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.wellText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.containerWork {
     display: none;
 }
-
 
 .active1 {
     background: #7872B9;
     color: #FFFFFF;
-  }
+}
 
-
-
-
-
-.container.active{
+.container.active {
     background-color: white;
+}
+
+.workingTogetherMore {
+    margin-bottom: 100px;
+}
+
+
+.bcFourSteps {
+    background-color: #F9FCFF;
+
+}
+
+.fourSteps h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: calc(1.8vw + 11.6px);
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #7872B9;
+    padding-bottom: calc(8.9vw + 8px);
+    padding-top: 100px;
+}
+
+.blockLeft {
+    z-index: 11;
+    display: flex;
+    margin-bottom: calc(9.6vw - 4.9px);
+}
+
+.leftContImage {
+    position: relative;
+    display: flex;
+}
+
+
+.num {
+    position: absolute;
+    margin-top: 25.6px;
+    z-index: 10;
+    width: calc(2vw + 18px);
+    height: calc(4vw + 36px);
+    margin-right: 60px;
+}
+
+.ellips {
+    position: absolute;
+    margin-left: 21px;
+    z-index: 9;
+    width: calc(10.3vw + 13px);
+    height: calc(9.2vw + 13px);
+}
+
+.leftContText {
+    z-index: 22;
+    margin-left: calc(8vw - 29px);
+    margin-right: calc(16vw - 58px);
+    width: calc(11.2vw + 209px);
+    /* width: 390px; */
+}
+
+.rightCont img {
+    width: calc(31.2vw - 12.6px);
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.leftContText h4 {
+    z-index: 25;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.7vw + 14px);
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #4D4D52;
+}
+
+
+.leftContText p {
+    z-index: 25;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5vw + 12.2px);
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #4D4D52;
+}
+
+
+.num3 {
+    position: absolute;
+    margin-top: 25.6px;
+    z-index: 10;
+    width: calc(3.5vw + 32px);
+    height: calc(4vw + 36px);
+    margin-right: 60px;
+}
+
+.blockRight {
+    z-index: 11;
+    display: flex;
+    margin-bottom: calc(9.6vw - 4.9px);
+}
+
+
+.rightCont {
+    margin-right: calc(16vw - 58px);
+}
+
+
+
+
+.blockRight .ellips {
+    position: absolute;
+    margin-left: 21px;
+    z-index: 1;
+    width: calc(10.3vw + 13px);
+    height: calc(9.2vw + 13px);
+}
+
+.fourStepsMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* .fourStepsMobile .ContText{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+} */
+
+.fourStepsMobile .ContImage {
+    padding-bottom: 32px;
+}
+
+
+.fourStepsMobile {
+    display: none;
+}
+
+.calenButton {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-left: 0;
+    /* justify-content: space-between; */
+}
+
+.calenButton .primary {
+    width: 410px;
+    height: 70px;
+}
+
+.calenButton .ellips {
+    width: 104px;
+    height: 98px;
+}
+
+
+.imgText {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgText p {
+    z-index: 25;
+    width: 312px;
+    height: 58px;
+}
+
+.imgText .ellips {
+    width: 104px;
+    height: 98px;
+    padding-top: 25.6px;
+    margin-top: 25.6px;
+}
+
+.imgText .num3 {
+    width: 100px;
+    height: 100px;
+}
+
+.imgText .num4 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: 25.6px;
+    z-index: 10;
+    margin-left: 30px;
+}
+
+.rightContImage .ellips {
+    z-index: 1;
+}
+
+
+
+/* .calenButton .leftContText{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: calc(25.8vw - 93px);
+} */
+
+.calenButton .primary {
+    font-size: calc(0.5vw + 12px);
+    margin-top: calc(4.1vw + 15px);
+    padding: 20px 0;
+    /* width: calc(7.6vw + 267px); */
+    width: 410px;
+    height: 70px;
+    cursor: pointer;
+    text-decoration: none;
+    background: #7872B9;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    /* font-size: 20px; */
+    color: white;
+    box-shadow: 11px 11px 4px 1px #CDE1FF;
+    margin-bottom: calc(1.2vw + 22px);
+    /* margin-left: calc(16vw - 58px); */
+    white-space: nowrap;
+    padding-left: calc(2.8vw + 43px);
+    padding-right: calc(2.8vw + 43px);
+}
+
+
+.calenButton .leftContText {
+    z-index: 22;
+    margin-left: calc(8vw - 29px);
+    /* margin-right: calc(16vw - 58px); */
+    width: calc(11.2vw + 209px);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 0;
+    /* width: 390px; */
+}
+
+.calenButton .leftContText p {
+    width: calc(8vw + 186px);
+    height: 56px;
+    margin: 0 0 -11px;
+}
+
+.calenButton .leftContText {
+    /* width: calc(8vw + 186px); */
+    padding-right: 30px;
+    width: 1000px;
 }
 
 
@@ -597,6 +874,48 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
 
 /* .chatsupport {
     position: absolute;
@@ -621,6 +940,8 @@ header {
 .container {
     display: none;
 }
+
+
 
 @media screen and (max-width: 1110px) {
     .sidenav {
@@ -747,9 +1068,17 @@ header {
         display: none;
     }
 
-    .containerWork{
+    .containerWork {
         display: block;
     }
+
+    .leftContText {
+        margin-left: 70px;
+    }
+
+    /* .calenButton .leftContText{
+        margin-left: 100px;
+    } */
 
 }
 
@@ -767,9 +1096,9 @@ header {
     background: #e0e0e0;
     /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
     z-index: 1001;
-  }
+}
 
-  .preloader__row {
+.preloader__row {
     position: relative;
     top: 50%;
     left: 50%;
@@ -779,9 +1108,9 @@ header {
     margin-left: -35px;
     text-align: center;
     animation: preloader-rotate 2s infinite linear;
-  }
+}
 
-  .preloader__item {
+.preloader__item {
     position: absolute;
     display: inline-block;
     top: 0;
@@ -790,37 +1119,49 @@ header {
     width: 35px;
     height: 35px;
     animation: preloader-bounce 2s infinite ease-in-out;
-  }
+}
 
-  .preloader__item:last-child {
+.preloader__item:last-child {
     top: auto;
     bottom: 0;
     animation-delay: -1s;
-  }
+}
 
-  @keyframes preloader-rotate {
+@keyframes preloader-rotate {
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
 
-  @keyframes preloader-bounce {
+@keyframes preloader-bounce {
 
     0%,
     100% {
-      transform: scale(0);
+        transform: scale(0);
     }
 
     50% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
 
-  .loaded_hiding .preloader {
+
+}
+
+.loaded_hiding .preloader {
     transition: 0.3s opacity;
     opacity: 0;
-  }
+}
 
-  .loaded .preloader {
+.loaded .preloader {
     display: none;
-  }
+}
+
+@media screen and (max-width: 870px) {
+    .fourSteps {
+        display: none;
+    }
+
+    .fourStepsMobile {
+        display: block;
+    }
+}
